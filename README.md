@@ -6,6 +6,8 @@ git clone https://github.com/linrui1994/awesome.git
 cd awesome
 npm install
 npm link
+ip
+# will show your local ip4
 ```
 >feature
 - ip       #get the local ip4
