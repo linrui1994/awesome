@@ -1,0 +1,25 @@
+{
+  "name": "awesome",
+  "version": "1.0.0",
+  "description": "some awesome script powered by nodejs",
+  "bin": {
+    "ip": "ip.js",
+    "push": "push.js",
+    "qrcode": "qrcode.js"
+  },
+  "dependencies": {
+    "qrcode": "^0.9.0",
+    "qrcode-terminal": "^0.11.0",
+    "quick-local-ip": "^1.0.7",
+    "shelljs": "^0.7.8"
+  },
+  "devDependencies": {},
+  "keywords": [
+    "awesome",
+    "script",
+    "node"
+  ],
+  "author": "linrui",
+  "email": "huacoder@gmail.com"
+  "license": "ISC"
+}
