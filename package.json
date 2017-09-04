@@ -5,7 +5,10 @@
   "bin": {
     "ip": "ip.js",
     "push": "push.js",
-    "qrcode": "qrcode.js"
+    "qrcode": "qrcode.js",
+    "gen_action": "gen_action.js",
+    "gen_vue": "gen_vue.js",
+    "mzip": "zip.js"
   },
   "dependencies": {
     "qrcode": "^0.9.0",
