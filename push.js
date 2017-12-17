@@ -23,7 +23,7 @@ message = JSON.stringify(message);
 exec(`git add .`)
 exec(`git commit -m ${message}`)
 
-if (current === 'current') {
+if (current !== 'current') {
   var checkout = exec('git checkout develop')
   if (/(fatal)|(error)/.test(checkout.stderr + checkout.stdout)) {
     exit(1)
