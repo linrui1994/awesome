@@ -16,7 +16,9 @@
     "quick-local-ip": "^1.0.7",
     "shelljs": "^0.7.8"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "sass-lint-vue": "^0.2.1"
+  },
   "keywords": [
     "awesome",
     "script",
