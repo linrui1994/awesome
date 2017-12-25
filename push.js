@@ -5,6 +5,8 @@ var cmd = exec('git symbolic-ref --short HEAD')
 var message = process.argv[2]
 var current = process.argv[3]
 
+console.log(current)
+
 if (cmd.stderr) {
   exit(1)
 }
@@ -13,7 +15,7 @@ if (!message) {
   exit(1)
 }
 var branch = cmd.stdout.replace(/\r?\n/, '')
-if ((branch === 'develop' || branch === 'master') && current !== 'current') {
+if ((branch === 'develop' || branch === 'master') && (current !== 'current' && current !== '--c')) {
   console.log('Do not directly modify the master or develop branch')
   exit(1)
 }
