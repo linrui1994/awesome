@@ -5,8 +5,6 @@ var cmd = exec('git symbolic-ref --short HEAD')
 var message = process.argv[2]
 var current = process.argv[3]
 
-console.log(current)
-
 if (cmd.stderr) {
   exit(1)
 }
