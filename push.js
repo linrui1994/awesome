@@ -5,6 +5,12 @@ var cmd = exec('git symbolic-ref --short HEAD')
 var message = process.argv[2]
 var current = process.argv[3]
 
+if (message === 'current' || message === '--c') {
+  let k = message
+  message = current
+  current = k
+}
+
 if (cmd.stderr) {
   exit(1)
 }
